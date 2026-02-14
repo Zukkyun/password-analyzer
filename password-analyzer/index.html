@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Password Strength Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Password Strength Analyzer</h1>
+
+    <input type="password" id="passwordInput" placeholder="Masukkan password..." />
+    
+    <div class="meter">
+      <div id="strengthBar"></div>
+    </div>
+
+    <p id="strengthText"></p>
+    <p id="entropyText"></p>
+    <p id="crackTimeText"></p>
+
+    <div class="education">
+      <h3>Cyber Education</h3>
+      <p>Brute force attack mencoba semua kombinasi karakter sampai cocok.</p>
+      <p>Dictionary attack menggunakan daftar password umum.</p>
+      <p>Password panjang lebih kuat dibanding password pendek dengan simbol aneh.</p>
+      <p>Password modern seharusnya disimpan menggunakan hashing seperti SHA-256 atau bcrypt.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
